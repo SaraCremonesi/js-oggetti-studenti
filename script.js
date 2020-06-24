@@ -49,4 +49,22 @@ $(document).ready(function() {
     for (var i = 0; i < students.length; i++) {
       console.log(students[i]);
     };
+
+
+  // Chiedo all'utente di inserire i dati di un nuovo studente
+  var studentName = prompt('Inserisci nome studente');
+  var studentSurname = prompt('Inserisci cognome studente');
+  var studentAge = parseInt(prompt('Inserisci età studente'));
+
+  // Creo l'oggetto in cui si inseriranno i nuovi studenti aggiunti
+  var addStudent = {
+    'name': studentName,
+    'surname': studentSurname,
+    'age': studentAge
+  }
+
+  // Pusho lo studente nel mio array precedente in modo da aggiungerlo
+  students.push(addStudent);
+
+  console.log(students);
 });
