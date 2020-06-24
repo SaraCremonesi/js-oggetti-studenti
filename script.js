@@ -47,9 +47,9 @@ $(document).ready(function() {
 
     // Stampo a video gli array di oggetti utilizzando un ciclo for standard
     for (var i = 0; i < students.length; i++) {
-      var studente = students[i];
-      console.log(studente.name);
-      console.log(studente.surname);
+      var eachStudent = students[i];
+      console.log(eachStudent.name);
+      console.log(eachStudent.surname);
     }
 
 
